@@ -1,5 +1,4 @@
 # find_cake
-python scripts to find the word Cake from wikipedia results
 
 ## Table Of Contents
 * [Introduction](#introduction)
