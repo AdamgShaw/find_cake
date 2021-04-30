@@ -14,22 +14,22 @@ if api_response.status_code != 200:
 api_response = api_response.text
 
 # initialise index position & counter to zero
-startIndex = 0
+start_index = 0
 count = 0
 
 # iterate over api_response taking it's length as range
 for i in range(len(api_response)):
     # search for string 'Cake' starting at position startIndex
-    findCake = api_response.find('Cake', startIndex)
+    find_cake = api_response.find('Cake', start_index)
 
     # if cake is found:
     # - increase count by 1
     # - continue search from next position
 
-    if (findCake != -1):
-        startIndex = findCake+1
+    if (find_cake != -1):
+        start_index = find_cake+1
         count += 1
-        findCake = 0
+        find_cake = 0
 
 
 print(f"\n'Cake' appears {count} times\n***Note*** Case Sensitive including corner cases e.g. 'Cakes'\n")
