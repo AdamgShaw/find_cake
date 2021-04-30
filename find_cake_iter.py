@@ -24,7 +24,7 @@ for i in range(len(api_response)):
 
     # if cake is found:
     # - increase count by 1
-    #  - continue search from next position
+    # - continue search from next position
 
     if (findCake != -1):
         startIndex = findCake+1
